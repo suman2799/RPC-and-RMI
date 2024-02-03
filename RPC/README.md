@@ -1,6 +1,6 @@
 # SUN RPC Implementation
 
-These are implementation files of SUN RPC. The RPC calls a procedure _add(int i, int j)_ implemented in a server file _add_server.c_ from a client file _add_client.c_. Clinet can request from _1_ to _n_ no. of packets to the server.
+These are implementation files of SUN RPC. The RPC calls a procedure _add(int i, int j)_ implemented in a server file _add_server.c_ from a client file _add_client.c_. Client can request from _1_ to _n_ no. of packets to the server.
 
 ## Installing
 
@@ -22,7 +22,7 @@ These are implementation files of SUN RPC. The RPC calls a procedure _add(int i,
     * LDLIBS += -lnsl -ltirpc
 * _make -f Makefile.add_ # Generate executable files
 * Now, we need to write the server side and client side codes.
-* Copy the _add_clinet.c_ and _add_server.c_ file from this repo and replace with ypur generated files or edit you can edit your client and server files to create custom function.
+* Copy the _add_client.c_ and _add_server.c_ file from this repo and replace with ypur generated files or edit you can edit your client and server files to create custom function.
 * Complie again using _make -f Makefile.add_
 * All the necessary files have been created.
 
@@ -31,7 +31,7 @@ These are implementation files of SUN RPC. The RPC calls a procedure _add(int i,
 * Run the server in a new terminal:
     * _./add_server_
 * Run the client in a new terminal:
-    * Usage: _./add_client <server_host> <number_1> <number_2> <packets>_
+    * Usage: _./add_client <server_host> <number_1> <number_2> packets_
     * Eg: _./add_client localhost 12 28 5_
  
 ## Source
