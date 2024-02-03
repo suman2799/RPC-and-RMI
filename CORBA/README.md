@@ -22,7 +22,7 @@ These are implementation files of CORBA heterogeneous programming. **Java Server
 * _javac math_/Math/*.java_ # Compile idlj package files
 * _omniidl -bpython Adder.idl_ # Generate Python Stubs
 * Now, we need to write the server side and client side codes.
-* Create an _Adder.idl_ file [This will generate stubs], an _AddServer.java_ file [Which will act as a server], an _AdderImpl.java_ [Where the procedure will be implemented] and finally the _AdderClinet.py_ file [Where the server procedure will be called from].
+* Create an _Adder.idl_ file [This will generate stubs], an _AdderServer.java_ file [Which will act as a server], an _AdderImpl.java_ [Where the procedure will be implemented] and finally the _AdderClient.py_ file [Where the server procedure will be called from].
 * For help refer to the **Source** tab.
 * Complie using _javac *.java_.
 * All the necessary files have been created.
@@ -65,7 +65,7 @@ These are implementation files of CORBA heterogeneous programming. **Java Server
 * Run the server in a new terminal:
     * _java AdderServer -ORBInitialPort 2500_
 * Run the client in a new terminal:
-    * Usage: _java Client <server_host> <number_1> <number_2> <packets>_
+    * Usage: _python3 AdderClient.py <number_1> <number_2> packets -ORBInitRef NameService=corbaname::localhost:2500/NameService_
     * Eg: _python3 AdderClient.py 15 30 5 -ORBInitRef NameService=corbaname::localhost:2500/NameService_
 
 ## Sources
