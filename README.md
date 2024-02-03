@@ -2,6 +2,11 @@
 
 Implementation of various RPC techniques have been shown here with execution time comparision with different no. of request generation ranging from _1_ to _n_.
 
+## Demonstration
+
+https://github.com/suman2799/RPC-and-RMI/assets/87803503/18df7d21-b369-48a8-9c42-4a13490d916b
+
+
 # SUN ONC/RPC Implementation
 
 These are implementation files of SUN RPC. The RPC calls a procedure _add(int i, int j)_ implemented in a server file _add_server.c_ from a client file _add_client.c_. Client can request from _1_ to _n_ no. of packets to the server.
