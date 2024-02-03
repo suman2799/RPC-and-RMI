@@ -1,4 +1,4 @@
-# RPC Implementation in SUN ONC/RPC, RMI, RMI-IIOP and CORBA
+# RPC Implementation in SUN ONC/RPC, Java RMI, Java RMI-IIOP and CORBA Programming
 
 Implementation of various RPC techniques have been shown here with execution time comparision with different no. of request generation ranging from _1_ to _n_.
 
